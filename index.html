@@ -8,6 +8,7 @@
                 font-family:monospace;
                 color:white;
                 background:black;
+                margin:15px;
             }
             h1 {
                 font-family:sans-serif;
@@ -20,27 +21,57 @@
             h2 {
                 font-family:sans-serif;  
             }
+            #contents {
+                height:1%;
+                overflow:auto;
+            }
+            .top {
+                position:fixed;
+                z-index:2;
+                width:100%;
+                background:black;
+            }
+            .posts {
+                position:relative;
+                top:250px;
+                z-index:1;
+            }
         </style>
     </head>
     <body>
         
+        <div class="top">
         <h1>hyprlynk's blog</h1>
-
+        
+        <div id="contents">
         <h3>contents</h3>
         <ul>
-            <li><a href="#p1">another post lalala</a></li>
+            <li><a href="#p3">third post</a></li>
+            <li><a href="#p2">another post lalala</a></li>
             <li><a href="#p1">first post</a></li>
         </ul>
+        </div>
+        </div>
+          
+        <div class="posts">
         
-        <h2 id="p1">another post lalala</h2>
+        <h2 id="p3">third post</h2>
         <h6>posted on 7/9/2018</h6>
+        <p>i need to make more posts to like, test stuff<br><br>line breaks!</p>
         
+        <h2 id="p3">third post</h2>
+        <h6>posted on 7/9/2018</h6>
+        <p>i need to make more posts to like, test stuff<br><br>line breaks!</p>
+        
+        <h2 id="p2">another post lalala</h2>
+        <h6>posted on 7/9/2018</h6>
         <p>this post used to have a reason for existing but now it doesn't</p>
       
         <h2 id="p1">first post</h2>
         <h6>posted on 7/9/2018</h6>
-        
         <p>I made this website.</p>
+          
+        </div>
         
         
         
