@@ -22,11 +22,13 @@
                 font-family:sans-serif;  
             }
             .contents {
-                width:40%;
-                height:100px;
-                overflow:auto;
+                width:20%;
                 border:1px dashed gray;
                 padding:6px;
+                position:absolute;
+                right:15px;
+                background:black;
+                margin:5px;
             }
             .top {
                 position:fixed;
@@ -37,9 +39,10 @@
             }
             .posts {
                 position:relative;
-                top:250px;
+                top:100px;
                 z-index:1;
                 margin-bottom:15px;
+                width:75%;
             }
         </style>
     </head>
@@ -51,6 +54,7 @@
         <div class="contents">
         <h3>contents</h3>
         <ul>
+            <li><a href="#p5">even better table of contents</a></li>
             <li><a href="#p4">better table of contents</a></li>
             <li><a href="#p3">third post</a></li>
             <li><a href="#p2">another post lalala</a></li>
@@ -62,6 +66,10 @@
         <div class="posts">
         
         
+        <h2 id="p5">even better table of contents</h2>
+        <h6>posted on 7/11/2018</h6>
+        <p>now it's a sidebar and the width of the posts box is restricted so you don't need to put in line breaks if you have multiline posts like this</p> 
+          
         <h2 id="p4">better table of contents</h2>
         <h6>posted on 7/10/2018</h6>
         <p>now the table of contents is in a box and it has a scrollbar so it doesn't take up the whole page once there's a lot of posts here</p> 
